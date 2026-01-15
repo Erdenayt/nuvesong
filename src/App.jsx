@@ -155,7 +155,7 @@ const ProductCard = ({
         <span className="product-category-badge">{category}</span>
         <div className="product-click-indicator">
           <span className="click-icon">👁️</span>
-          <span className="click-text">Detayları Gör</span>
+          <span className="click-text">Detaylar</span>
         </div>
       </div>
       <div className="product-content">

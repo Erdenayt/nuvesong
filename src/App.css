@@ -1434,6 +1434,14 @@ a:hover {
     height: 250px;
   }
 
+  .photo-overlay {
+    pointer-events: none;
+  }
+
+  .view-button {
+    display: none;
+  }
+
   .modal-close {
     top: 10px;
     right: 10px;
@@ -1590,6 +1598,14 @@ a:hover {
 
   .photo-card {
     height: 280px;
+  }
+
+  .photo-overlay {
+    pointer-events: none;
+  }
+
+  .view-button {
+    display: none;
   }
 
   .contact-form {
