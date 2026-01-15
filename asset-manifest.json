@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/nuvesong/static/css/main.f2d9f2ef.css",
-    "main.js": "/nuvesong/static/js/main.f26fee04.js",
-    "static/js/453.1e524492.chunk.js": "/nuvesong/static/js/453.1e524492.chunk.js",
+    "main.js": "/nuvesong/static/js/main.b134f726.js",
+    "static/js/593.5b039aa4.chunk.js": "/nuvesong/static/js/593.5b039aa4.chunk.js",
     "static/media/farm.jpg": "/nuvesong/static/media/farm.be038528c7e73131a939.jpg",
     "index.html": "/nuvesong/index.html",
     "main.f2d9f2ef.css.map": "/nuvesong/static/css/main.f2d9f2ef.css.map",
-    "main.f26fee04.js.map": "/nuvesong/static/js/main.f26fee04.js.map",
-    "453.1e524492.chunk.js.map": "/nuvesong/static/js/453.1e524492.chunk.js.map"
+    "main.b134f726.js.map": "/nuvesong/static/js/main.b134f726.js.map",
+    "593.5b039aa4.chunk.js.map": "/nuvesong/static/js/593.5b039aa4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2d9f2ef.css",
-    "static/js/main.f26fee04.js"
+    "static/js/main.b134f726.js"
   ]
 }
