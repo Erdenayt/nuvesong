@@ -248,7 +248,7 @@ const ProductsSection = () => {
       description:
         "Günlük topladığımız yumurtalar sadece doğal gıdalarla beslenen tavuklarımızdan sofralarınıza. Yumurtamız kokusuz, taze ve oldukça lezzetlidir.",
       availability: "Yıl boyunca",
-      image: "/images/stock/eggs.jpg",
+      image: "images/stock/eggs.jpg",
       detailedDescription:
         " Permakültür prensiplerine uygun olarak yetiştirilen tavuklarımızdan elde edilen yumurtalar, her gün taze olarak toplanır ve doğrudan sofralarınıza ulaştırılır. Tavuklarımız doğal ortamlarında serbestçe dolaşır, stres yaşamaz ve yalnızca içeriğinde aktif karbon, diatom ve toplam 13 çeşit gıdayla hazırlanan doğal yemle beslenir.",
     },
@@ -259,7 +259,7 @@ const ProductsSection = () => {
       description:
         "En doğal şekilde yetiştirdiğimiz San Marzano cinsi domateslerimizle özenle hazırladığımız domates sosumuz.. Pizza ve yemeklerinizde kullanılmak üzere hazırdır..",
       availability: "Eylül ayından sonra",
-      image: "/images/stock/tomatosauce.jpg",
+      image: "images/stock/tomatosauce.jpg",
       detailedDescription:
         "En doğal yöntemlerle yetiştirdiğimiz, aroması ve dengeli asiditesiyle ünlü San Marzano cinsi domateslerden özenle hazırlanan domates sosumuz, katkı maddesi ve koruyucu içermez. Domateslerimiz tam olgunluğunda hasat edilir, lezzetini kaybetmeden işlenir. Doğal tadı ve yoğun kıvamı sayesinde özellikle pizzalar için mükemmeldir; aynı zamanda makarna, et ve sebze yemeklerinde de farkını hemen hissettirir. Ev yapımı lezzet arayanlar için, zaman kazandıran ama lezzetten ödün vermeyen bir seçenektir.",
     },
@@ -270,7 +270,7 @@ const ProductsSection = () => {
       description:
         "Sağlıklı ve son derece lezzetli çeri domateslerimiz, tamamen doğal olarak yetiştirilmiştir. İddialıyız; yedikten yarım saat sonra bile tadını ve aromasını ağzınızda hissedeceksiniz!",
       availability: "Haziran - Eylül",
-      image: "/images/cesmeli/domates2.jpg",
+      image: "images/cesmeli/domates2.jpg",
       detailedDescription:
         "Sağlıklı ve son derece lezzetli çeri domateslerimiz, tamamen doğal yöntemlerle yetiştirilmiştir. Doğal gübre kullanılarak, ilaçsız şekilde üretilen domateslerimiz; tazeliği, yoğun aroması ve dengeli tatlılığıyla fark yaratır. Salatalarda, yemeklerde ya da dalından koparıp taze taze yemek için idealdir. Lezzetine o kadar güveniyoruz ki; yedikten yarım saat sonra bile tadını ve aromasını ağzınızda hissetmeye devam edersiniz. Market domatesi değil, gerçek domates tadını arayanlar için.",
     },
@@ -281,7 +281,7 @@ const ProductsSection = () => {
       description:
         "Sağlıklı ve lezzetli. Doğal gübre kullanılarak, tamamen ilaçsız şekilde üretilir. Sebzelerimiz doğanın ritmine uygun olarak yetiştirildiği için hem besin değeri hem de aroması yüksektir..",
       availability: "Yıl boyunca",
-      image: "/images/cesmeli/sebzeler.jpg",
+      image: "images/cesmeli/sebzeler.jpg",
       detailedDescription:
         "Permakültür prensiplerine uygun olarak yetiştirilen mevsim sebzelerimiz; sağlıklı, taze ve lezzetlidir. Her mevsim tarlamızda bulunan sebzeler değişiklik gösterebilir. Güncel olarak hangi sebzelerin mevcut olduğu bilgisi için bizimle iletişime geçebilirsiniz. Gerçek mevsim sebzesinin tadını bilenler için, doğrudan tarladan sofraya..",
     },
@@ -292,7 +292,7 @@ const ProductsSection = () => {
       description:
         " Permakültür prensiplerine uygun olarak yetiştirilen mevsim meyvelerimiz; gerçek meyve tadını arayanlar için idealdir.",
       availability: "Yıl boyunca",
-      image: "/images/cesmeli/erik2.jpeg",
+      image: "images/cesmeli/erik2.jpeg",
       detailedDescription:
         "Permakültür prensiplerine uygun olarak yetiştirilen mevsim meyvelerimiz; sağlıklı, taze ve yoğun aromalıdır. Doğal gübre kullanılarak, tamamen ilaçsız şekilde yetiştirilir. Doğanın kendi döngüsüne saygı gösterilerek üretilen meyvelerimiz, gerçek meyve tadını arayanlar için idealdir. Mevsime göre tarlamızda bulunan meyveler değişiklik gösterebilir. Güncel olarak hangi meyvelerin mevcut olduğu bilgisi için bizimle iletişime geçebilirsiniz. Dalından kopmuş gibi taze, doğadan sofranıza.",
     },
