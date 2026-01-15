@@ -4,6 +4,8 @@ import "./App.css";
 // ============================================
 // UTILITY:  Smooth Scroll Handler
 // ============================================
+const BASE_URL = process.env.PUBLIC_URL || "";
+
 const smoothScroll = (targetId) => {
   const element = document.getElementById(targetId);
   if (element) {
@@ -61,12 +63,18 @@ const Navigation = () => {
             </button>
           </li>
           <li className="nav-item">
-            <button onClick={() => handleNavClick("photos")} className="nav-link">
+            <button
+              onClick={() => handleNavClick("photos")}
+              className="nav-link"
+            >
               Fotoğraflar
             </button>
           </li>
           <li className="nav-item">
-            <button onClick={() => handleNavClick("videos")} className="nav-link">
+            <button
+              onClick={() => handleNavClick("videos")}
+              className="nav-link"
+            >
               Videolar
             </button>
           </li>
@@ -219,7 +227,6 @@ const ProductModal = ({ product, isOpen, onClose }) => {
               <p>{product.description}</p>
             </div>
             <div className="product-modal-detailed-description">
-              <h3>Detaylı Açıklama</h3>
               <p>
                 {product.detailedDescription ||
                   "Bu ürün hakkında daha detaylı bilgi yakında eklenecektir. Sorularınız için bizimle iletişime geçebilirsiniz."}
@@ -252,20 +259,20 @@ const ProductsSection = () => {
       description:
         "Günlük topladığımız yumurtalar sadece doğal gıdalarla beslenen tavuklarımızdan sofralarınıza. Yumurtamız kokusuz, taze ve oldukça lezzetlidir.",
       availability: "Yıl boyunca",
-      image: "images/stock/eggs.jpg",
+      image: `${BASE_URL}/images/stock/eggs.jpg`,
       detailedDescription:
-        " Permakültür prensiplerine uygun olarak yetiştirilen tavuklarımızdan elde edilen yumurtalar, her gün taze olarak toplanır ve doğrudan sofralarınıza ulaştırılır. Tavuklarımız doğal ortamlarında serbestçe dolaşır, stres yaşamaz ve yalnızca içeriğinde aktif karbon, diatom ve toplam 13 çeşit gıdayla hazırlanan doğal yemle beslenir.",
+        " Permakültür prensiplerine uygun olarak yetiştirilen tavuklarımızdan elde edilen yumurtalar, her gün taze olarak toplanır ve doğrudan sofralarınıza ulaştırılır. Tavuklarımız doğal ortamlarında serbestçe dolaşır, stres yaşamaz ve yalnızca içeriğinde aktif karbon, diatom ve toplam 13 çeşit gıdayla hazırlanan özel doğal yemle beslenir.",
     },
     {
       id: 2,
       name: "Permakültür Domates Sosu",
       category: "Sos",
       description:
-        "En doğal şekilde yetiştirdiğimiz San Marzano cinsi domateslerimizle özenle hazırladığımız domates sosumuz.. Pizza ve yemeklerinizde kullanılmak üzere hazırdır..",
+        "En doğal şekilde yetiştirdiğimiz San Marzano cinsi domateslerimizle özenle hazırladığımız domates sosumuz.. Ev yapımı lezzet arayanlar için, zaman kazandıran ama lezzetten ödün vermeyen bir seçenektir..",
       availability: "Eylül ayından sonra",
-      image: "images/stock/tomatosauce.jpg",
+      image: `${BASE_URL}/images/stock/tomatosauce.jpg`,
       detailedDescription:
-        "En doğal yöntemlerle yetiştirdiğimiz, aroması ve dengeli asiditesiyle ünlü San Marzano cinsi domateslerden özenle hazırlanan domates sosumuz, katkı maddesi ve koruyucu içermez. Domateslerimiz tam olgunluğunda hasat edilir, lezzetini kaybetmeden işlenir. Doğal tadı ve yoğun kıvamı sayesinde özellikle pizzalar için mükemmeldir; aynı zamanda makarna, et ve sebze yemeklerinde de farkını hemen hissettirir. Ev yapımı lezzet arayanlar için, zaman kazandıran ama lezzetten ödün vermeyen bir seçenektir.",
+        "Aroması ve dengeli asiditesiyle ünlü San Marzano cinsi domateslerden özenle hazırlanan domates sosumuz, katkı maddesi ve koruyucu içermez. Domateslerimiz tam olgunluğunda hasat edilir, lezzetini kaybetmeden işlenir. Doğal tadı ve yoğun kıvamı sayesinde özellikle pizzalar için mükemmeldir; aynı zamanda makarna, et ve sebze yemeklerinde de farkını hemen hissettirir.",
     },
     {
       id: 3,
@@ -274,31 +281,31 @@ const ProductsSection = () => {
       description:
         "Sağlıklı ve son derece lezzetli çeri domateslerimiz, tamamen doğal olarak yetiştirilmiştir. İddialıyız; yedikten yarım saat sonra bile tadını ve aromasını ağzınızda hissedeceksiniz!",
       availability: "Haziran - Eylül",
-      image: "images/cesmeli/domates2.jpg",
+      image: `${BASE_URL}/images/cesmeli/domates2.jpg`,
       detailedDescription:
-        "Sağlıklı ve son derece lezzetli çeri domateslerimiz, tamamen doğal yöntemlerle yetiştirilmiştir. Doğal gübre kullanılarak, ilaçsız şekilde üretilen domateslerimiz; tazeliği, yoğun aroması ve dengeli tatlılığıyla fark yaratır. Salatalarda, yemeklerde ya da dalından koparıp taze taze yemek için idealdir. Lezzetine o kadar güveniyoruz ki; yedikten yarım saat sonra bile tadını ve aromasını ağzınızda hissetmeye devam edersiniz. Market domatesi değil, gerçek domates tadını arayanlar için.",
+        "Doğal gübre kullanılarak, ilaçsız şekilde üretilen domateslerimiz; tazeliği, yoğun aroması ve dengeli tatlılığıyla fark yaratır. Salatalarda, yemeklerde ya da dalından koparıp taze taze yemek için idealdir. Market domatesi değil, gerçek domates tadını arayanlar için.",
     },
     {
       id: 4,
       name: "Permakültür Mevsim Sebzeleri ",
       category: "Sebze",
       description:
-        "Sağlıklı ve lezzetli. Doğal gübre kullanılarak, tamamen ilaçsız şekilde üretilir. Sebzelerimiz doğanın ritmine uygun olarak yetiştirildiği için hem besin değeri hem de aroması yüksektir..",
+        "Sağlıklı ve lezzetli. Doğal gübre kullanılarak, tamamen ilaçsız şekilde üretilir. Gerçek mevsim sebzesinin tadını bilenler için, doğrudan tarladan sofraya..",
       availability: "Yıl boyunca",
-      image: "images/cesmeli/sebzeler.jpg",
+      image: `${BASE_URL}/images/cesmeli/sebzeler.jpg`,
       detailedDescription:
-        "Permakültür prensiplerine uygun olarak yetiştirilen mevsim sebzelerimiz; sağlıklı, taze ve lezzetlidir. Her mevsim tarlamızda bulunan sebzeler değişiklik gösterebilir. Güncel olarak hangi sebzelerin mevcut olduğu bilgisi için bizimle iletişime geçebilirsiniz. Gerçek mevsim sebzesinin tadını bilenler için, doğrudan tarladan sofraya..",
+        "Permakültür prensiplerine uygun olarak yetiştirilen mevsim sebzelerimiz; sağlıklı, taze ve lezzetlidir. Sebzelerimiz doğanın ritmine uygun olarak yetiştirildiği için hem besin değeri hem de aroması yüksektir. Her mevsim tarlamızda bulunan sebzeler değişiklik gösterebilir. Güncel olarak hangi sebzelerin mevcut olduğu bilgisi için bizimle iletişime geçebilirsiniz.",
     },
     {
       id: 5,
       name: "Permakültür Mevsim Meyveleri ",
       category: "Meyve",
       description:
-        " Permakültür prensiplerine uygun olarak yetiştirilen mevsim meyvelerimiz; gerçek meyve tadını arayanlar için idealdir.",
+        " Sağlıklı ve lezzetli. Doğal gübre kullanılarak, tamamen ilaçsız şekilde üretilir. Gerçek meyve tadını arayanlar için idealdir. Dalından kopmuş gibi taze, doğadan sofranıza.",
       availability: "Yıl boyunca",
-      image: "images/cesmeli/erik2.jpeg",
+      image: `${BASE_URL}/images/cesmeli/erik2.jpeg`,
       detailedDescription:
-        "Permakültür prensiplerine uygun olarak yetiştirilen mevsim meyvelerimiz; sağlıklı, taze ve yoğun aromalıdır. Doğal gübre kullanılarak, tamamen ilaçsız şekilde yetiştirilir. Doğanın kendi döngüsüne saygı gösterilerek üretilen meyvelerimiz, gerçek meyve tadını arayanlar için idealdir. Mevsime göre tarlamızda bulunan meyveler değişiklik gösterebilir. Güncel olarak hangi meyvelerin mevcut olduğu bilgisi için bizimle iletişime geçebilirsiniz. Dalından kopmuş gibi taze, doğadan sofranıza.",
+        "Permakültür prensiplerine uygun olarak yetiştirilen mevsim meyvelerimiz; sağlıklı, taze ve yoğun aromalıdır. Mevsime göre tarlamızda bulunan meyveler değişiklik gösterebilir. Güncel olarak hangi meyvelerin mevcut olduğu bilgisi için bizimle iletişime geçebilirsiniz.",
     },
   ];
 
@@ -431,18 +438,18 @@ const PhotoGallery = () => {
   };
 
   const photos = [
-    { id: 1, url: "images/cesmeli/farmer.jpeg", alt: "Farmer" },
-    { id: 2, url: "images/cesmeli/farmer2.jpeg", alt: "Farmer 2" },
-    { id: 3, url: "images/cesmeli/traktor.jpeg", alt: "Traktor" },
-    { id: 4, url: "images/cesmeli/tavuk1.jpg", alt: "Tavuk 1" },
-    { id: 5, url: "images/cesmeli/tarla.jpg", alt: "Tarla" },
-    { id: 6, url: "images/cesmeli/tavuk2.jpg", alt: "Tavuk 2" },
-    { id: 7, url: "images/cesmeli/tarla2.jpg", alt: "Tarla 2" },
-    { id: 8, url: "images/cesmeli/fasulye.jpg", alt: "Fasulye" },
-    { id: 9, url: "images/cesmeli/feslegen.jpg", alt: "Feslegen" },
-    { id: 10, url: "images/cesmeli/erik1.jpeg", alt: "Erik 1" },
-    { id: 11, url: "images/cesmeli/boncuk.jpg", alt: "Boncuk" },
-    { id: 12, url: "images/cesmeli/anka.jpg", alt: "Anka" },
+    { id: 1, url: `${BASE_URL}/images/cesmeli/farmer.jpeg`, alt: "Farmer" },
+    { id: 2, url: `${BASE_URL}/images/cesmeli/farmer2.jpeg`, alt: "Farmer 2" },
+    { id: 3, url: `${BASE_URL}/images/cesmeli/traktor.jpeg`, alt: "Traktor" },
+    { id: 4, url: `${BASE_URL}/images/cesmeli/tavuk1.jpg`, alt: "Tavuk 1" },
+    { id: 5, url: `${BASE_URL}/images/cesmeli/tarla.jpg`, alt: "Tarla" },
+    { id: 6, url: `${BASE_URL}/images/cesmeli/tavuk2.jpg`, alt: "Tavuk 2" },
+    { id: 7, url: `${BASE_URL}/images/cesmeli/tarla2.jpg`, alt: "Tarla 2" },
+    { id: 8, url: `${BASE_URL}/images/cesmeli/fasulye.jpg`, alt: "Fasulye" },
+    { id: 9, url: `${BASE_URL}/images/cesmeli/feslegen.jpg`, alt: "Feslegen" },
+    { id: 10, url: `${BASE_URL}/images/cesmeli/erik1.jpeg`, alt: "Erik 1" },
+    { id: 11, url: `${BASE_URL}/images/cesmeli/boncuk.jpg`, alt: "Boncuk" },
+    { id: 12, url: `${BASE_URL}/images/cesmeli/anka.jpg`, alt: "Anka" },
   ];
 
   return (
