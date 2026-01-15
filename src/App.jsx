@@ -153,6 +153,10 @@ const ProductCard = ({
       <div className="product-image-wrapper">
         <img src={image} alt={name} className="product-image" loading="lazy" />
         <span className="product-category-badge">{category}</span>
+        <div className="product-click-indicator">
+          <span className="click-icon">👁️</span>
+          <span className="click-text">Detayları Gör</span>
+        </div>
       </div>
       <div className="product-content">
         <h3 className="product-name">{name}</h3>
@@ -308,11 +312,29 @@ const ProductsSection = () => {
     setSelectedProduct(null);
   };
 
-  // Filter products based on selected category
-  const filteredProducts =
+  // Filter and sort products based on selected category
+  let filteredProducts =
     selectedCategory === "All"
       ? products
       : products.filter((product) => product.category === selectedCategory);
+
+  // Custom sorting: "Permakültür Mevsim Sebzeleri" should come first in Sebze category
+  if (selectedCategory === "Sebze") {
+    filteredProducts.sort((a, b) => {
+      if (a.name.includes("Permakültür Mevsim Sebzeleri")) return -1;
+      if (b.name.includes("Permakültür Mevsim Sebzeleri")) return 1;
+      return a.name.localeCompare(b.name, "tr-TR");
+    });
+  }
+
+  // Custom sorting: "Permakültür Mevsim Meyveleri" should come first in Meyve category
+  if (selectedCategory === "Meyve") {
+    filteredProducts.sort((a, b) => {
+      if (a.name.includes("Permakültür Mevsim Meyveleri")) return -1;
+      if (b.name.includes("Permakültür Mevsim Meyveleri")) return 1;
+      return a.name.localeCompare(b.name, "tr-TR");
+    });
+  }
 
   return (
     <section className="products-section" id="products">
